@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
+.search_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bfbfbf;
+    padding: 10px 40px;
+    border-radius: 50px;
+    width:0px;
+    transition: width 2s;
+}
+
+.serach_input{
+    border-width: 0px;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.font{
+    font-size: 24px;
+    color: #000;
+    margin: 15px;
+}
+
+.search_container:hover{
+    width: 350px;
+}

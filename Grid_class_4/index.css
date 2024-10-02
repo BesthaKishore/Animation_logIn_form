@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.warraper{
+    background-color: rgb(67, 67, 250);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.grid_items1,.grid_items2,.grid_items3,.grid_items4,.grid_items5,.grid_items6,.grid_items7,.grid_items8,
+.grid_items9,.grid_items10,.grid_items11,.grid_items12,.grid_items13,.grid_items14,.grid_items15{
+    background-color: #bfbfbf;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid_items8{
+    grid-column: 2/6;
+    grid-row: 1/5;
+}
+
+@media screen and (max-width:700px) {
+    .warraper{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, auto);
+    }
+
+    .grid_items8{
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+}
